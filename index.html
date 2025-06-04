@@ -3,134 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posgrados - Universidad de Ejemplo</title>
+    <title>POSGRADOS - Facultad de Ingeniería</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header class="site-header">
+
+    <div class="top-banner">
+        <span>Nuevo costo de crédito que aplicará a partir de julio 2025: $4,952.47</span>
+        <a href="#" class="btn-top-banner">Costos y pagos</a>
+    </div>
+
+    <header class="main-header">
         <div class="header-content">
-            <a href="/" class="logo-link">
-                <img src="https://via.placeholder.com/60x60?text=LOGO+UP" alt="Logo Universidad de Ejemplo" class="university-logo">
-            </a>
-            <h1>Posgrados UP</h1>
-            <button class="menu-toggle" aria-label="Abrir menú de navegación">
-                <i class="fas fa-bars"></i>
-            </button>
+            <h1 class="header-title">POSGRADOS</h1>
+            <p class="header-subtitle">Facultad de Ingeniería</p>
         </div>
     </header>
 
-    <div class="main-container">
+    <div class="main-wrapper">
         <aside class="sidebar">
-            <nav class="main-nav">
+            <div class="sidebar-header">
+                <i class="fas fa-bars menu-icon"></i>
+                <span class="menu-title">MENÚ</span>
+            </div>
+            <nav class="sidebar-nav">
                 <ul>
-                    <li><a href="#inicio" class="active"><i class="fas fa-home"></i> Inicio</a></li>
-                    <li><a href="#maestrias"><i class="fas fa-user-graduate"></i> Maestrías</a></li>
-                    <li><a href="#doctorados"><i class="fas fa-flask"></i> Doctorados</a></li>
-                    <li><a href="#diplomados"><i class="fas fa-certificate"></i> Diplomados</a></li>
-                    <li><a href="#educacion-continua"><i class="fas fa-chalkboard-teacher"></i> Educación Continua</a></li>
-                    <li><a href="#calendario"><i class="fas fa-calendar-alt"></i> Calendario</a></li>
-                    <li><a href="#admisiones"><i class="fas fa-door-open"></i> Admisiones</a></li>
-                    <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <li class="nav-item has-submenu">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-chevron-down submenu-arrow"></i>
+                            Plan Especialidades
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="#">Especialidad en Estructuras</a></li>
+                            <li><a href="#">Especialidad en Geotecnia</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-submenu">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-chevron-down submenu-arrow"></i>
+                            Plan Maestrías
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="#">Maestría en Ingeniería Civil</a></li>
+                            <li><a href="#">Maestría en Sistemas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">PLAN ANTERIOR<br>Especialidades Plan 2018</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">PLAN ANTERIOR<br>Maestrías Plan 2018</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Ligas de clases</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Calendario</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Costos & Pagos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Diplomado en Ciencia de Datos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Becas, financiamiento, seguro de orfandad y SEMM</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Intercambios</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Documentos importantes</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Tutoriales</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Preguntas frecuentes</a></li>
                 </ul>
             </nav>
         </aside>
 
         <main class="content-area">
-            <section id="inicio" class="page-section">
-                <h2>Bienvenido a Posgrados UP</h2>
-                <p>Explora nuestras opciones de posgrado diseñadas para impulsar tu carrera profesional y académica. En la Universidad de Ejemplo, te ofrecemos programas de alta calidad con un enfoque integral.</p>
-                <div class="card-grid">
-                    <div class="card">
-                        <h3>Maestrías</h3>
-                        <p>Programas de maestría de vanguardia en diversas áreas.</p>
-                        <a href="#maestrias" class="btn">Ver Maestrías</a>
-                    </div>
-                    <div class="card">
-                        <h3>Doctorados</h3>
-                        <p>Investigación de alto nivel y desarrollo de conocimiento original.</p>
-                        <a href="#doctorados" class="btn">Ver Doctorados</a>
-                    </div>
-                    <div class="card">
-                        <h3>Educación Continua</h3>
-                        <p>Diplomados y cursos para la actualización profesional.</p>
-                        <a href="#educacion-continua" class="btn">Ver Cursos</a>
-                    </div>
-                </div>
+            <section class="welcome-section">
+                <h2>Bienvenido al Sitio Interno de los Posgrados de la Facultad de Ingeniería.</h2>
+                <p>En este sitio podrá encontrar toda la información relacionada con los posgrados.</p>
+                <p>Para tu comodidad, a continuación encontrarás accesos directos de los sitios más visitados dentro del sitio.</p>
             </section>
 
-            <section id="maestrias" class="page-section hidden">
-                <h2>Maestrías</h2>
-                <p>Aquí encontrarás la lista detallada de nuestras maestrías. Cada programa está diseñado para ofrecer una formación profunda y especializada en su campo.</p>
-                <ul>
-                    <li>Maestría en Administración de Negocios (MBA)</li>
-                    <li>Maestría en Finanzas Corporativas</li>
-                    <li>Maestría en Marketing Digital</li>
-                    <li>Maestría en Derecho Corporativo</li>
-                    <li>Maestría en Inteligencia Artificial</li>
-                </ul>
+            <section class="quick-links-grid">
+                <a href="#" class="quick-link-card">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>Costos & Pagos</span>
+                </a>
+                <a href="#" class="quick-link-card">
+                    <i class="fas fa-link"></i>
+                    <span>Ligas de clases</span>
+                </a>
+                <a href="#" class="quick-link-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Calendario</span>
+                </a>
+                <a href="#" class="quick-link-card">
+                    <i class="fas fa-globe-americas"></i>
+                    <span>Intercambios</span>
+                </a>
             </section>
 
-            <section id="doctorados" class="page-section hidden">
-                <h2>Doctorados</h2>
-                <p>Nuestros programas de doctorado están orientados a la investigación y la generación de conocimiento original.</p>
-                <ul>
-                    <li>Doctorado en Ciencias Económicas</li>
-                    <li>Doctorado en Derecho</li>
-                    <li>Doctorado en Ciencias de la Computación</li>
-                </ul>
+            <section class="newsletter-section">
+                <h3>¿No te están llegando los correos?</h3>
+                <p>Ayúdanos llenando la información solicitada en <a href="#" class="text-link">este</a> forms para que no te pierdas la comunicación importante de parte de los Posgrados. Esta comunicación incluye:</p>
             </section>
 
-            <section id="diplomados" class="page-section hidden">
-                <h2>Diplomados</h2>
-                <p>Ofrecemos una variedad de diplomados para la especialización rápida en áreas clave.</p>
-                <ul>
-                    <li>Diplomado en Gestión de Proyectos</li>
-                    <li>Diplomado en Liderazgo y Habilidades Directivas</li>
-                    <li>Diplomado en Ciberseguridad</li>
-                </ul>
-            </section>
-
-            <section id="educacion-continua" class="page-section hidden">
-                <h2>Educación Continua</h2>
-                <p>Mantente actualizado con nuestros cursos y talleres especializados.</p>
-                <ul>
-                    <li>Curso de Big Data y Análisis de Datos</li>
-                    <li>Taller de Oratoria y Comunicación Efectiva</li>
-                    <li>Seminario de Innovación Empresarial</li>
-                </ul>
-            </section>
-
-            <section id="calendario" class="page-section hidden">
-                <h2>Calendario Académico</h2>
-                <p>Consulta las fechas importantes de inicio y fin de cursos, inscripciones y eventos.</p>
-                <p>[Aquí podrías incrustar un calendario de Google o una tabla de fechas]</p>
-            </section>
-
-            <section id="admisiones" class="page-section hidden">
-                <h2>Admisiones</h2>
-                <p>Información sobre el proceso de admisión, requisitos y fechas importantes para postular a nuestros programas.</p>
-                <p><a href="#">Descargar Guía de Admisión</a></p>
-            </section>
-
-            <section id="contacto" class="page-section hidden">
-                <h2>Contacto</h2>
-                <p>¿Tienes preguntas? Contáctanos:</p>
-                <p><strong>Teléfono:</strong> +52 55 1234 5678</p>
-                <p><strong>Email:</strong> info.posgrados@universidad-ejemplo.edu</p>
-                <p><strong>Dirección:</strong> Av. Principal #123, Colonia Centro, Ciudad de México, México</p>
-            </section>
+            <div class="info-icon-bottom">
+                <i class="fas fa-info-circle"></i>
+            </div>
         </main>
     </div>
-
-    <footer class="site-footer">
-        <p>&copy; 2025 Universidad de Ejemplo. Todos los derechos reservados.</p>
-        <div class="social-links">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
